@@ -1,0 +1,74 @@
+{
+  "name": "",
+  "glyphs": [
+    {
+      "search": [
+        "profile",
+        "contact",
+        "user"
+      ],
+      "code": 128100,
+      "uid": "86ee1fc7ff57e9c9c60d8a5e57183776",
+      "file": "user",
+      "css": "user",
+      "orig_css": "user",
+      "orig_code": 128100,
+      "src": "iconic",
+      "from": 128100
+    },
+    {
+      "search": [
+        "calendar",
+        "date"
+      ],
+      "code": 128197,
+      "uid": "c833c98d78cfebed5780cfaaa302a12b",
+      "file": "calendar_alt_stroke",
+      "css": "calendar",
+      "orig_css": "calendar",
+      "orig_code": 128197,
+      "src": "iconic",
+      "from": 128197
+    },
+    {
+      "search": [
+        "pin",
+        "pushpin"
+      ],
+      "code": 128204,
+      "from": 128204,
+      "uid": "794d73c3a5fcf710265679700e470578",
+      "file": "pin",
+      "css": "pin",
+      "orig_css": "pin",
+      "orig_code": 128204,
+      "src": "iconic"
+    },
+    {
+      "search": [
+        "download"
+      ],
+      "code": 128229,
+      "uid": "815576dccc008afcfd83a38378a4fdde",
+      "file": "download",
+      "css": "download",
+      "orig_css": "download",
+      "orig_code": 128229,
+      "src": "iconic",
+      "from": 128229
+    },
+    {
+      "search": [
+        "key"
+      ],
+      "code": 128273,
+      "uid": "c6ecc52b6db2a649a08ff54e5ea62886",
+      "file": "key_fill",
+      "css": "key-inv",
+      "orig_css": "key-inv",
+      "orig_code": 128273,
+      "src": "iconic",
+      "from": 128273
+    }
+  ]
+}
