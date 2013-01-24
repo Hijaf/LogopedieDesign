@@ -47,37 +47,40 @@
             <h1><a href="../index.html"><img src="../img/logo.png" alt="Unité Logopédie de la voix" width="200" height="145"></a></h1>
             <nav>
                 <ul>
-                    <li><a href="./portraits.html">Portraits</a></li>
-                    <li><a href="#">Recherche</a></li>
-                    <li><a href="./enseignements.html">Enseignements</a></li>
-                    <li><a href="./agenda.html">Agenda</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="./portraits.html" class="icon-user">Portraits</a></li>
+                    <li><a href="#" class="icon-search active">Recherche</a></li>
+                    <li><a href="./enseignements.html" class="icon-pencil-neg">Enseignements</a></li>
+                    <li><a href="./agenda.html" class="icon-calendar">Agenda</a></li>
+                    <li><a href="./contact.html" class="icon-chat-inv">Contact</a></li>
                 </ul>
             </nav>
         </header>
         <div class="content">
-            <h2>Nos recherches à travers le monde</h2>
+            <h2 class="icon-search">Nos recherches à travers le monde</h2>
+            <div id="gmap"></div>
         </div>
-        <div id="presentation">
+        <div id="presentationRecherche">
             <div class="content">
-                <div>
-                    <h2>Les membres de l'équipe</h2>
-                    <p>Chef de Service de l'Unité de Logopédie de la Voix</p>
-                    <ul>
-                        <li>Professeure Dominique MORSOMME</li>
-                    </ul>
-                    <p>Chercheurs</p>
-                    <ul>
-                        <li>Pauline LARROUY-MAESTRI</li>
-                        <li>Angélique REMACLE</li>
-                    </ul>
-                </div>
+                <h2>Les villes avec qui nous sommes en relation</h2>
+                <p>Paris</p>
+                <p>Lyon</p>
+                <p>Toulouse</p>
+                <p>Marseille</p>
+                <p>Londres</p>
+                <p>Philadelphie</p>
+                <p>Montréal</p>
+                <p>San Francisco</p>
+                <p>Bruxelles</p>
+                <p>Anvers</p>
+                <p>Gand</p>
+                <p>Neuss (Rhénanie du Nord Westphalie)</p>
             </div>
         </div>
         <footer>
             <p class="content">Faculté de Psychologie des Sciences de l'Education 5, Boulevard du Rectorat 4000 Liège Belgique</p>
         </footer>
         
+        <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDHJ3p-sn1Y5tJGrzH9MF5cbR5sdsDmhfg&sensor=false"></script>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.8.0.min.js"><\/script>')</script>
         <script src="../js/plugins.js"></script>

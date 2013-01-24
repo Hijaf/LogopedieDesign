@@ -1,8 +1,12 @@
 @charset "UTF-8";
 
 
+.icon-pencil-neg:before { content: '\270f'; } /* '✏' */
+.icon-chat-inv:before { content: '\e721'; } /* '' */
 .icon-user:before { content: '👤'; } /* '\1f464' */
 .icon-calendar:before { content: '📅'; } /* '\1f4c5' */
 .icon-pin:before { content: '📌'; } /* '\1f4cc' */
 .icon-download:before { content: '📥'; } /* '\1f4e5' */
+.icon-camera:before { content: '📷'; } /* '\1f4f7' */
+.icon-search:before { content: '🔎'; } /* '\1f50e' */
 .icon-key-inv:before { content: '🔑'; } /* '\1f511' */

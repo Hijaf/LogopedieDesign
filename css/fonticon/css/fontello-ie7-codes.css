@@ -1,5 +1,10 @@
 
+.icon-pencil-neg { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x270f;&nbsp;'); }
+.icon-chat-inv { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe721;&nbsp;'); }
 .icon-user { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x1f464;&nbsp;'); }
 .icon-calendar { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x1f4c5;&nbsp;'); }
 .icon-pin { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x1f4cc;&nbsp;'); }
+.icon-download { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x1f4e5;&nbsp;'); }
+.icon-camera { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x1f4f7;&nbsp;'); }
+.icon-search { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x1f50e;&nbsp;'); }
 .icon-key-inv { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x1f511;&nbsp;'); }

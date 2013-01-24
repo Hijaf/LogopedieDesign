@@ -2,16 +2,21 @@
 html{
 	font-size: 16px;
 	font-family: Helvetica, Arial, sans-serif;
+	color: #606060;
 }
 a{
 	text-decoration: underline;
 	color: #606060;
 }
-a:hover{
-	color: #D37A15;
+a:hover, .active{
+	color: #BC7116;
 }
 li{
 	list-style-type: none;
+}
+ul{
+	margin: 0;
+	padding: 0;
 }
 .content{
 	width: 960px;
@@ -87,7 +92,7 @@ nav{
 nav ul{
 	font-family: 'Quicksand', sans-serif;
 	padding: 0;
-	margin-top: 5em;
+	margin-top: 4.5em;
 }
 nav li{
 	display: inline-block;
@@ -95,11 +100,12 @@ nav li{
 	margin-left: 20px;
 }
 nav li a{
+	display: block;
 	color: #383838;
-	padding: 0.4em 0.3em;
+	padding: 0.4em 0.6em;
 	text-decoration: none;
 }
-nav li a:hover{
+nav li a:hover, .active{
 	-moz-border-radius: 4px;
 	-webkit-border-radius: 4px;
 	-o-border-radius: 4px;
@@ -136,7 +142,6 @@ nav li a:hover{
 }
 #evenements, #evenementsComplete{
 	overflow: hidden;
-	color: #606060;
 	padding: 1em 0;
 }
 #agenda, #agendaComplete{
@@ -199,20 +204,20 @@ nav li a:hover{
 .event h3{
 	margin: 0;
 }
-#presentation, #presentationPortraits, #presentationEnseignement, #presentationAgenda{
-	background: url( ../img/fondPresent.jpg );
+#presentation, #presentationPortraits, #presentationEnseignement, #presentationAgenda, #presentationContact, #presentationRecherche{
+	background: #F1F1F1;
+	border-top: #AAA solid 1px;
 	overflow: hidden;
 	line-height: 1.6em;
 	margin-top: 1.5em;
 }
 #presentation h2{
-	color: #606060;
-	padding-top: 2em;
+	padding-top: 1em;
 	margin-bottom: 0;
 }
-#presentation .content, #presentationPortraits .content, #presentationEnseignement .content, #presentationAgenda .content{
+#presentation .content, #presentationPortraits .content, #presentationEnseignement .content, #presentationAgenda .content, #presentationContact .content,
+#presentationRecherche .content{
 	overflow: hidden;
-	background: url( ../img/separateContent.jpg ) repeat-x;
 }
 #presentation .content div{
 	float: left;
@@ -222,7 +227,6 @@ nav li a:hover{
 }
 #presentation p, #presentation li{
 	width: 460px;
-	color: #606060;
 }
 #presentation ol{
 	width: 460px;
@@ -231,7 +235,7 @@ nav li a:hover{
 #presentation div + p{
 	float: right;
 	margin-left: 40px;
-	margin-top: 6.9em;
+	margin-top: 5.35em;
 }
 /************************************
 ******** Footer
@@ -251,18 +255,14 @@ footer p{
 ************************************/
 #uniteTexte{
 	overflow: hidden;
-	color: #606060;
 	padding-bottom: 1em;
 }
 #uniteTexte div{
-	width: 440px;
+	width: 460px;
 	float: left;
 }
 #uniteTexte div + div{
-	margin-left: 80px;
-}
-#presentationPortraits{
-	color: #606060;
+	margin-left: 40px;
 }
 #presentationPortraits h2{
 	padding-top: 2em;
@@ -291,7 +291,6 @@ footer p{
 ******** Page enseignements
 ************************************/
 .enseignement, #presentationEnseignement{
-	color: #606060;
 	padding-bottom: 1em;
 }
 #presentationEnseignement h2, #presentationEnseignement h3{
@@ -314,17 +313,17 @@ footer p{
 }
 #presentationEnseignement thead{
 	font-weight: bold;
-	border-top: 1px solid #606060;
-	border-bottom: 1px solid #606060;
+	border-top: 1px solid #CCC;
+	border-bottom: 1px solid #CCC;
 }
 #presentationEnseignement thead td{
-	border-right: 1px solid #606060;
+	border-right: 1px solid #CCC;
 	width: 320px;
 	padding: 0.3em 0;
 }
 #presentationEnseignement tbody td{
 	padding: 1em 0;
-	border-right: 1px solid #606060;
+	border-right: 1px solid #CCC;
 }
 #presentationEnseignement thead td:last-child, #presentationEnseignement tbody td:last-child{
 	border: none;
@@ -340,4 +339,268 @@ footer p{
 ************************************/
 #presentationAgenda{
 	line-height: 1.45em;
+}
+#presentationAgenda h2{
+	color: #606060;
+}
+/************************************
+******** Page contact
+************************************/
+.contact{
+	margin-bottom: 3.5em;
+}
+.contact h3, #presentationContact h3{
+	border-bottom: 1px solid #CCC;
+}
+.contact section{
+	overflow: hidden;
+}
+#voitureAcces{
+	width: 460px;
+	float: left;
+}
+#gmap{
+	height: 315px;
+	border: 10px solid #DBDBDB;
+	border-radius: 5px
+}
+#gmap.contact {
+	width: 460px;
+	left: 20px;
+}
+#presentationContact ul + ul{
+	margin-top: 1em;
+}
+#presentationContact ul + ul li{
+	border-top: 1px solid #CCC;
+	padding: 1em 0;
+}
+#presentationContact ul + ul li p{
+	margin: 0.3em 0;
+}
+#presentationContact .content{
+	padding-bottom: 2em;
+}
+#presentationContact section{
+	width: 220px;
+	float: left;
+}
+#presentationContact section + section{
+	margin-left: 20px;
+}
+#presentationContact h3:first-child{
+	padding-top: 2em;
+}
+/************************************
+******** Page recherche
+************************************/
+#presentationRecherche p{
+	display: inline-block;
+	padding: 0 0.85em;
+}
+#presentationRecherche p + p{
+	border-left: 1px solid #AAA;
+	border-right: 1px solid #AAA;
+}
+/* ==============
+  Media Querie (min-width: 768px) and (max-width: 959px)
+  ============== */
+@media only screen and (min-width: 768px) and (max-width: 959px){
+	.content{
+		width: 660px;
+	}
+	header h1{
+		width: 160px;
+	}
+	header h1 img{
+		width: 160px;
+		height: 116px;
+	}
+	nav{
+		width: 500px;
+		margin: 0;
+	}
+	nav ul{
+		margin-top: 3.6em;
+	}
+	nav li{
+		font-size: 0.85em;
+	}
+	nav li + li{
+		margin-left: 0px;
+	}
+	#slider{
+		margin-top: -4.05em;
+	}
+	#slider img{
+		width: 660px;
+	}
+	.eventSlider{
+		position: absolute;
+		right: 1em;
+		top: 0.8em;
+		padding: 1em;
+		background: rgba(0,0,0,.80);
+		color: white;
+		text-align: right;
+	}
+	.eventSlider h2{
+		margin: 0;
+		font-size: 1.1em;
+	}
+	.eventSlider p{
+		margin-top: 0.5em;
+	}
+	#evenements, #evenementsComplete{
+		overflow: hidden;
+		padding: 1em 0;
+	}
+	#evenements h2{
+		text-align: center;
+	}
+	#evenements ul{
+		margin: 0 auto;
+	}
+	#agenda, #agendaComplete{
+		float: none;
+		margin: 0 auto;
+	}
+	#publications, #publicationsComplete{
+		float: none;
+		margin: 0 auto;
+		margin-top: 2em;
+	}
+	#presentation{
+		padding-bottom: 2em;
+	}
+	#presentation .content div{
+		float: none;
+	}
+	#presentation p{
+		float: none;
+	}
+	#presentation p, #presentation li{
+		width: 660px;
+	}
+	#presentation ol{
+		width: 660px;
+	}
+	#presentation div + p{
+		margin-top: 0.5em;
+	}
+	/************************************
+	******** Page portraits
+	************************************/
+	#uniteTexte{
+		overflow: hidden;
+		padding-bottom: 1em;
+	}
+	#uniteTexte div{
+		width: 660px;
+		float: none;
+	}
+	#uniteTexte div + div{
+		margin-left: 0px;
+	}
+	/************************************
+	******** Page enseignements
+	************************************/
+	#presentationEnseignement h2{
+		padding-top: 1em;
+	}
+	/************************************
+	******** Page contact
+	************************************/
+	#voitureAcces{
+		width: 660px;
+	}
+	#gmap.contact{
+		left: 0;
+		top: 2em;
+		width: 640px;
+	}
+	#presentationContact ul + ul li{
+		border-top: 1px solid #CCC;
+	}
+	#presentationContact section{
+		float: none;
+		width: 660px;
+	}
+	#presentationContact section + section{
+		margin-left: 0px;
+	}
+}
+/* ==============
+  Media Querie ((min-width: 480px) and (max-width: 767px)
+   ============== */
+@media only screen and (min-width: 480px) and (max-width: 767px){
+	.content{
+		width: 440px;
+	}
+	#connexion form, #slider{
+		display: none;
+	}
+	header.noSlider{
+		border: none;
+	}
+	header h1{
+		float: none;
+		display: block;
+		margin: 0.67em auto;
+		padding-left: 1.5em;
+		margin-bottom: 0em;
+	}
+	nav{
+		float: none;
+		width: 440px;
+		border-top: 1px solid #CCC;
+		border-bottom: 1px solid #CCC;
+		overflow: hidden;
+		padding: 0;
+	}
+	nav ul{
+		overflow: hidden;
+		margin-top: 0;
+		padding: 0.5em 0;
+	}
+	nav li{
+		display: block;
+		float: left;
+	}
+	nav li + li{
+		margin-left: 0px;
+	}
+	nav li + li + li + li{
+		margin-left: 6.3em;
+	}
+	nav li + li + li + li + li{
+		margin: 0;
+	}
+	nav li a{
+		font-size: 1.1em;
+	}
+	#evenements, #evenementsComplete, #agenda, #agendaComplete, #publications, #publicationsComplete{
+		width: 440px;
+	}
+	#publications, #publicationsComplete{
+		margin-top: 2em;
+	}
+	#presentation div p, #presentation div li{
+		width: 440px;
+	}
+	#presentation div + p{
+		width: 440px;
+		float: none;
+		margin: 0;
+		margin-bottom: 2em;
+	}
+	h2{
+		border: none;
+	}
+}
+/* ==============
+  Media Querie ((min-width: 0px) and (max-width: 479px)
+   ============== */
+@media only screen and (min-width: 0px) and (max-width: 479px){
+
 }

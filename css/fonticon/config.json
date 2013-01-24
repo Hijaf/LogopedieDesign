@@ -3,6 +3,36 @@
   "glyphs": [
     {
       "search": [
+        "pencil",
+        "write",
+        "reply",
+        "edit"
+      ],
+      "code": 9999,
+      "uid": "e3e12be877eab92e593ca185223e7a5b",
+      "file": "pen_alt_fill",
+      "css": "pencil-neg",
+      "orig_css": "pencil-neg",
+      "orig_code": 9999,
+      "src": "iconic",
+      "from": 9999
+    },
+    {
+      "search": [
+        "chat",
+        "talk"
+      ],
+      "code": 59169,
+      "uid": "cc8beaf58a46ee4186e7aa51209a9b53",
+      "file": "chat_alt_fill",
+      "css": "chat-inv",
+      "orig_css": "chat-inv",
+      "orig_code": 59169,
+      "src": "iconic",
+      "from": 59169
+    },
+    {
+      "search": [
         "profile",
         "contact",
         "user"
@@ -56,6 +86,34 @@
       "orig_code": 128229,
       "src": "iconic",
       "from": 128229
+    },
+    {
+      "search": [
+        "camera",
+        "photo"
+      ],
+      "code": 128247,
+      "uid": "69253046b55214b42caada5c226801f2",
+      "file": "camera",
+      "css": "camera",
+      "orig_css": "camera",
+      "orig_code": 128247,
+      "src": "iconic",
+      "from": 128247
+    },
+    {
+      "search": [
+        "search",
+        "find"
+      ],
+      "code": 128270,
+      "uid": "c6344a6ed148da12354cc90705287696",
+      "file": "magnifying_glass",
+      "css": "search",
+      "orig_css": "search",
+      "orig_code": 128270,
+      "src": "iconic",
+      "from": 128270
     },
     {
       "search": [
