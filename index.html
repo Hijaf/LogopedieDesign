@@ -9,10 +9,11 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="icon" type="image/png" href="./img/favicon.png" />
 
-        <link rel="stylesheet" href="./css/normalize.css">
-        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" type="text/css" href="./css/style.css">
         <link rel="stylesheet" type="text/css" href="./css/fonticon/css/fontello.css">
 
@@ -35,7 +36,7 @@
                     </div>
                     <div>
                         <label class="icon-key-inv" for="pass">Mot de passe</label>
-                        <input type="pass">
+                        <input type="password">
                     </div>
                     <div>
                         <input type="submit" value="connexion ">
@@ -45,7 +46,7 @@
         </div>
         <header class="content">
             <h1><a href="#"><img src="./img/logo.png" alt="Unité Logopédie de la voix" width="200" height="145"></a></h1>
-            <nav>
+            <nav role="navigation">
                 <ul>
                     <li><a href="./html/portraits.html" class="icon-user">Portraits</a></li>
                     <li><a href="./html/recherche.html" class="icon-search">Recherche</a></li>
@@ -56,18 +57,16 @@
             </nav>
         </header>
         <section id="slider" class="content">
-            <div>
-                <div id="slide1" class="eventSlider">
+                <section id="slide1" class="eventSlider">
                     <h2>Colloque sur la logopédie</h2>
                     <p>Université de Liège - Auditoire des sciences P12</p>
                     <p>Heure : 20h30</p>
-                </div>
-                <div id="slide2" class="eventSlider img2">
+                </section>
+                <section id="slide2" class="eventSlider img2">
                     <h2>Description de l’unité Logopédique</h2>
                     <p>Nous avons enfin rajouter la description de l'unité Logopédie. Découvrez-en plus sur nous dés maintenant !</p>
-                </div>
-                <img src="./img/slider.png" alt="slider" width="960" heigth="270">
-            </div>
+                </section>
+                <img src="./img/slider.jpg" alt="slider" width="960" heigth="270">
         </section>
         <div id="evenements" class="content">
             <section id="agenda">
@@ -128,7 +127,7 @@
         </div>
         <div id="presentation">
             <div  class="content">
-                <div>
+                <section>
                     <h2>Description de l’unité Logopédie</h2>
                     <p>
                         L’unité Logopédie de la Voix est incluse dans le département 1 (Département de psychologie : Cognition et Comportement) de la Faculté de Psychologie et des Sciences de l’Education de l’Université de Liège. Elle est une des finalités de la section logopédie. En effet, la section logopédie de l’ULg comprend 4 finalités à  savoir :
@@ -139,9 +138,9 @@
                         <li>Finalité spécialisée en surdité</li>
                         <li>Finalité spécialisée en voix</li>
                     </ol>
-                </div>
+                </section>
                 <p>
-                    L’unité Logopédie de la voix a vu le jour en octobre 2008. L’unité a un triple objectif. Premièrement, former de futur(e)s logopèdes  aux rééducations des troubles de la voix parlée et chantée. Deuxièmement, développer un secteur de recherche spécifique au domaine de la voix dont les intérêts sont pour l’instant : l’évaluation vocale, la charge vocale, la justesse vocale. Troisièmement, offrir la possibilité d’une prise en charge logopédique en voix et en orthodontie au sein de la Clinique Psychologique et Logopédie de la Faculté [http://www.fapse.ulg.ac.be/cms/c_328124/fr/accueil]
+                    L’unité Logopédie de la voix a vu le jour en octobre 2008. L’unité a un triple objectif. Premièrement, former de futur(e)s logopèdes  aux rééducations des troubles de la voix parlée et chantée. Deuxièmement, développer un secteur de recherche spécifique au domaine de la voix dont les intérêts sont pour l’instant : l’évaluation vocale, la charge vocale, la justesse vocale. Troisièmement, offrir la possibilité d’une prise en charge logopédique en voix et en orthodontie au sein de <a href="http://www.fapse.ulg.ac.be/cms/c_328124/fr/accueil">la Clinique Psychologique et Logopédie de la Faculté</a>
                 </p>
             </div>
         </div>
@@ -153,13 +152,5 @@
         <script>window.jQuery || document.write('<script src="./js/vendor/jquery-1.8.0.min.js"><\/script>')</script>
         <script src="./js/plugins.js"></script>
         <script src="./js/main.js"></script>
-
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g,s)}(document,'script'));
-        </script>
     </body>
 </html>

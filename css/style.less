@@ -1,12 +1,15 @@
-// @import url('normalize.less');
 html{
 	font-size: 16px;
 	font-family: Helvetica, Arial, sans-serif;
 	color: #606060;
 }
+h2{
+	margin: 0 0 0.83em 0;
+}
 a{
 	text-decoration: underline;
 	color: #606060;
+	font-family: 'Quicksand', sans-serif;
 }
 a:hover, .active{
 	color: #BC7116;
@@ -35,12 +38,12 @@ ul{
 	float: right;
 }
 #connexion form div{
-	width: 260px;
+	width: 280px;
 	float: left;
 	margin-right: 1.5em;
 }
 #connexion form div:first-child{
-	width: 225px;
+	width: 250px;
 }
 #connexion form label{
 	color: #794402;
@@ -125,13 +128,13 @@ nav li a:hover, .active{
 	margin-top: -4.75em;
 	z-index: -1;
 }
-#slider div{
+#slider section{
 	width: 344px;
 }
 .eventSlider{
 	position: absolute;
 	right: 2.5em;
-	top: 2.5em;
+	top: 2em;
 	padding: 1em;
 	background: rgba(0,0,0,.80);
 	color: white;
@@ -142,7 +145,7 @@ nav li a:hover, .active{
 }
 #evenements, #evenementsComplete{
 	overflow: hidden;
-	padding: 1em 0;
+	padding: 2em 0;
 }
 #agenda, #agendaComplete{
 	float: left;
@@ -209,17 +212,17 @@ nav li a:hover, .active{
 	border-top: #AAA solid 1px;
 	overflow: hidden;
 	line-height: 1.6em;
-	margin-top: 1.5em;
+	padding-top: 2em;
+	padding-bottom: 1.5em;
 }
 #presentation h2{
-	padding-top: 1em;
 	margin-bottom: 0;
 }
 #presentation .content, #presentationPortraits .content, #presentationEnseignement .content, #presentationAgenda .content, #presentationContact .content,
 #presentationRecherche .content{
 	overflow: hidden;
 }
-#presentation .content div{
+#presentation .content section{
 	float: left;
 }
 #presentation p{
@@ -230,12 +233,12 @@ nav li a:hover, .active{
 }
 #presentation ol{
 	width: 460px;
-	padding-left: 0;
+	padding: 0;
 }
-#presentation div + p{
+#presentation section + p{
 	float: right;
 	margin-left: 40px;
-	margin-top: 5.35em;
+	margin-top: 2.7em;
 }
 /************************************
 ******** Footer
@@ -255,7 +258,8 @@ footer p{
 ************************************/
 #uniteTexte{
 	overflow: hidden;
-	padding-bottom: 1em;
+	padding-top: 2em;
+	padding-bottom: 2em;
 }
 #uniteTexte div{
 	width: 460px;
@@ -265,7 +269,6 @@ footer p{
 	margin-left: 40px;
 }
 #presentationPortraits h2{
-	padding-top: 2em;
 	margin-bottom: 0;
 	color: #D37A15;
 }
@@ -291,13 +294,11 @@ footer p{
 ******** Page enseignements
 ************************************/
 .enseignement, #presentationEnseignement{
-	padding-bottom: 1em;
+	padding-bottom: 1.5em;
+	padding-top: 1.5em;
 }
 #presentationEnseignement h2, #presentationEnseignement h3{
 	color: #D37A15;
-}
-#presentationEnseignement h2{
-	padding-top: 2em;
 }
 #presentationEnseignement section + section{
 	margin-top: 2em;
@@ -305,7 +306,7 @@ footer p{
 #presentationEnseignement a{
 	padding: 0.5em 0;
 	display: block;
-	width: 200px;
+	width: 220px;
 }
 #presentationEnseignement table{
 	margin-top: 2em;
@@ -343,11 +344,18 @@ footer p{
 #presentationAgenda h2{
 	color: #606060;
 }
+#evenementsComplete{
+	padding: 1em 0;
+}
+#evenements.agenda{
+	padding-top: 0;
+}
 /************************************
 ******** Page contact
 ************************************/
 .contact{
-	margin-bottom: 3.5em;
+	padding-top: 2em;
+	padding-bottom: 2em;
 }
 .contact h3, #presentationContact h3{
 	border-bottom: 1px solid #CCC;
@@ -358,6 +366,10 @@ footer p{
 #voitureAcces{
 	width: 460px;
 	float: left;
+}
+#voitureAcces h4{
+	margin-top: 1em;
+	margin-bottom: 0.3em;
 }
 #gmap{
 	height: 315px;
@@ -377,30 +389,44 @@ footer p{
 }
 #presentationContact ul + ul li p{
 	margin: 0.3em 0;
-}
-#presentationContact .content{
-	padding-bottom: 2em;
-}
-#presentationContact section{
+}#presentationContact section{
 	width: 220px;
 	float: left;
 }
 #presentationContact section + section{
 	margin-left: 20px;
 }
-#presentationContact h3:first-child{
-	padding-top: 2em;
-}
 /************************************
 ******** Page recherche
 ************************************/
-#presentationRecherche p{
-	display: inline-block;
-	padding: 0 0.85em;
+div.content .icon-search, div.content > h2.icon-calendar{
+	margin-top: 1.1em; 
 }
-#presentationRecherche p + p{
-	border-left: 1px solid #AAA;
-	border-right: 1px solid #AAA;
+#gmap{
+	margin-bottom: 2em;
+}
+#world section{
+	width: 440px;
+	float: left;
+	padding: 0 20px;
+}
+#world section h4{
+	font-size: 1.2em;
+	border-bottom: 1px solid #CCC;
+}
+.person img{
+ 	float: left;
+	padding: 0.4em;
+ 	background: rgba(0,0,0,.20);
+ 	margin-right: 1em;
+}
+.person p{
+	margin: 0;
+	padding: 0;
+}
+.person h5{
+	font-size: 1.05em;
+	margin: 0 0 0.5em 0;
 }
 /* ==============
   Media Querie (min-width: 768px) and (max-width: 959px)
@@ -473,7 +499,7 @@ footer p{
 	#presentation{
 		padding-bottom: 2em;
 	}
-	#presentation .content div{
+	#presentation .content section{
 		float: none;
 	}
 	#presentation p{
@@ -485,7 +511,7 @@ footer p{
 	#presentation ol{
 		width: 660px;
 	}
-	#presentation div + p{
+	#presentation section + p{
 		margin-top: 0.5em;
 	}
 	/************************************
@@ -588,7 +614,7 @@ footer p{
 	#presentation div p, #presentation div li{
 		width: 440px;
 	}
-	#presentation div + p{
+	#presentation section + p{
 		width: 440px;
 		float: none;
 		margin: 0;
@@ -597,10 +623,168 @@ footer p{
 	h2{
 		border: none;
 	}
+	/************************************
+	******** Page portraits
+	************************************/
+	#uniteTexte div + div {
+    	margin-left: 0px;
+	}
+	/************************************
+	******** Page contact
+	************************************/
+	#gmap.contact{
+		width: 420px;
+		left: 0;
+		top: 2em;
+	}
+	#presentationContact section{
+		float: none;
+		width: 440px;
+	}
+	#presentationContact section + section{
+		margin-left: 0;
+	}
+	#presentationContact h3:first-child{
+		padding-top: 0em;
+	}
+	#presentationContact ul + ul li{
+		padding: 0.2em 0;
+	}
+
+	#evenements{
+    	overflow: hidden;
+    	padding: 0em 0;
+	}
 }
 /* ==============
   Media Querie ((min-width: 0px) and (max-width: 479px)
    ============== */
 @media only screen and (min-width: 0px) and (max-width: 479px){
+	.content{
+		width: 300px;
+	}
+	#connexion form, #slider{
+		display: none;
+	}
+	header.noSlider{
+		border: none;
+	}
+	header h1{
+		float: none;
+		display: block;
+		margin: 0.67em auto;
+		padding-left: 1.5em;
+		margin-bottom: 0em;
+	}
+	nav{
+		float: none;
+		width: 300px;
+		border-top: 1px solid #CCC;
+		border-bottom: 1px solid #CCC;
+		overflow: hidden;
+		padding: 0;
+	}
+	nav ul{
+		overflow: hidden;
+		margin-top: 0;
+		padding: 0.5em 0;
+		width: 300px;
+	}
+	nav li{
+		display: block;
+		float: none;
+		width: 290px;
+	}
+	nav li + li{
+		margin-left: 0px;
+	}
+	nav li a{
+		font-size: 1em;
+	}
+	#evenements, #evenementsComplete, #agenda, #agendaComplete, #publications, #publicationsComplete{
+		width: 300px;
+	}
+	#publications, #publicationsComplete{
+		margin-top: 2em;
+	}
+	#presentation div p, #presentation div li{
+		width: 300px;
+	}
+	#presentation section + p{
+		width: 300px;
+		float: none;
+		margin: 0;
+		margin-bottom: 2em;
+	}
+	h2{
+		border: none;
+		text-align: center;
+		width: 300px;
+	}
+	.event{
+		position: relative;
+	}
+	.event div{
+		right: 0em;
+		top: 0;
+		left: 2.6em;
+		position: relative;
+		z-index: 0;
+		border-left: 1px solid black;
+		padding: 0.5em 0 0.5em 4em;
+	}
+	.event p{
+		font-size: 0.8em;
+		margin: 0.4em 0 0.3em 0;
+		width: 190px;
+	}
+	.event strong{
+		padding-top: 0em;
+		font-weight: bold;
+		display: block;
+	}
+	.event img{
+		float: left;
+	}
+	.event h3{
+		margin: 0;
+		font-size: 0.9em;
+		width: 190px;
+	}
+	/************************************
+	******** Page portraits
+	************************************/
+	#uniteTexte div + div {
+    	margin-left: 0px;
+	}
+	#uniteTexte div{
+		width: 300px;
+		float: none;
+	}
+	/************************************
+	******** Page contact
+	************************************/
+	#gmap.contact{
+		width: 300px;
+		left: 0;
+		top: 2em;
+	}
+	#presentationContact section{
+		float: none;
+		width: 300px;
+	}
+	#presentationContact section + section{
+		margin-left: 0;
+	}
+	#presentationContact h3:first-child{
+		padding-top: 0em;
+	}
+	#presentationContact ul + ul li{
+		padding: 0.2em 0;
+	}
 
+	#evenements{
+    	overflow: hidden;
+    	padding: 0em 0;
+	}
 }

@@ -9,10 +9,11 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="icon" type="image/png" href="../img/favicon.png" />
 
         <link rel="stylesheet" href="../css/normalize.css">
         <link rel="stylesheet" href="../css/main.css">
+        <link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" type="text/css" href="../css/style.css">
         <link rel="stylesheet" type="text/css" href="../css/fonticon/css/fontello.css">
 
@@ -45,7 +46,7 @@
         </div>
         <header class="content noSlider">
             <h1><a href="../index.html"><img src="../img/logo.png" alt="Unité Logopédie de la voix" width="200" height="145"></a></h1>
-            <nav>
+            <nav role="navigation">
                 <ul>
                     <li><a href="./portraits.html" class="icon-user">Portraits</a></li>
                     <li><a href="#" class="icon-search active">Recherche</a></li>
@@ -61,19 +62,100 @@
         </div>
         <div id="presentationRecherche">
             <div class="content">
-                <h2>Les villes avec qui nous sommes en relation</h2>
-                <p>Paris</p>
-                <p>Lyon</p>
-                <p>Toulouse</p>
-                <p>Marseille</p>
-                <p>Londres</p>
-                <p>Philadelphie</p>
-                <p>Montréal</p>
-                <p>San Francisco</p>
-                <p>Bruxelles</p>
-                <p>Anvers</p>
-                <p>Gand</p>
-                <p>Neuss (Rhénanie du Nord Westphalie)</p>
+                <section>
+                    <h2>Les personnes et villes avec qui nous avons collaboré</h2>
+                </section>
+                <section id="world">
+                    <section>
+                        <h4>Gand</h4>
+                    </section>
+                    <section>
+                        <h4>Lyon</h4>
+                    </section>
+                    <section>
+                        <h4>Toulouse</h4>
+                    </section>
+                    <section>
+                        <h4>Bruxelles</h4>
+                    </section>
+                    <section>
+                        <h4>Philadelphie</h4>
+                        <section class="person">
+                            <img src="../img/robert.jpg" width="100" />
+                            <h5>Robert Sataloff, The Voice Foundation </h5>
+                            <p>Depuis 2007, nous présentons régulièrement  nos recherches à ce congrès annuel de la voix</p>
+                        </section>
+                    </section>                          
+                    <section>
+                        <h4>Londres</h4>
+                        <section class="person">
+                            <img src="../img/john.jpg" width="100"/>
+                            <h5>John Rubin, British Voice Association</h5>
+                            <p>
+                                Dominique Morsomme a séjourné 3 mois au  « University College of London » auprès de 
+                                John Rubin. 
+                            </p>
+                        </section>
+                    </section>              
+                    <section>
+                        <h4>Anvers</h4>
+                        <section class="person">
+                            <img src="../img/marc.png" width="100"/>
+                            <h5>Marc De Bodt enseigne la voix à la faculté de médecine et de psychologie de Gand et d’Anvers.</h5>
+                            <p>
+                                Il est également clinicien à l’hôpital d’Anvers spécialisé dans les troubles de la voix et de la parole. 
+                                Nous avons collaboré à la traduction en néerlandais du Voice Handicap Index pour chanteurs. 
+                            </p>                    
+                        </section>
+                    </section>              
+                    <section>
+                        <h4>Neuss (Rhénanie du Nord Westphalie)</h4>
+                        <section class="person">
+                            <img src="../img/ben.png" width="100"/>
+                            <h5>Ben Barsties</h5>
+                            <p>
+                                Il a rejoint l'Université de Zuyd à Heerlen en 2011 (NL) pour étudier l'orthophonie Baccalauréat 
+                                en santé /Orthophonie. Son objectif professionnel est le diagnostic, le traitement et la prévention 
+                                des troubles de la voix. Actuellement, il travaille avec des collègues belges et néerlandais sur 
+                                des projets scientifiques pour le diagnostic de la voix et l'influence de divers facteurs sur les 
+                                caractéristiques de la voix. 
+                            </p>
+                        </section>
+                    </section>
+                    <section>
+                        <h4>Marseille</h4>
+                        <section class="person">
+                        <img src="../img/antoine.jpg" width="100"/>
+                        <h5>Antoine Giovanni, Laboratoire Parole et Langage</h5>
+                        <p>
+                            Il est en charge de l'équipe Phonologie qui gère les thématiques de recherche liées à la 
+                            voix et aux cordes vocales: chirurgie du larynx et phono-chirurgie, étude de la vibration
+                            des cordes vocales et modélisation mathématique du larynx, analyse objective et perceptive 
+                            des dysphonies. 
+                        </p>
+                        <p>
+                            Dominique Morsomme a contribué en tant que sujet à une étude sur la pression sous glottique 
+                            estimée (Benoit Amy de la Bretèque).
+                        </p>
+                        </section>
+                        <section class="person">
+                            <img src="../img/joana.jpg" width="100"/>
+                            <h5>Joana Revis, Docteur en orthophonie</h5>
+                            <p>
+                                Elle est une collègue avec qui nous partageons nos thèmes de recherche et qui est invitée 
+                                de temps à autre pour enrichir le cours des étudiants en logopédie du Master 2.
+                            </p>
+                        </section>
+                    </section>
+                    <section>
+                        <h4>Montréal</h4>
+                        <section class="person">
+                            <img src="../img/isabelle.jpg" width="100"/>
+                            <h5>Isabelle Peretz, Brams </h5>
+                            <p>Pauline Larrouy-Maestri a séjourné 5 mois au laboratoire Brams grâce à une bourse.</p>
+                        </section>
+                    </section>  
+                </section>
             </div>
         </div>
         <footer>
@@ -85,13 +167,5 @@
         <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.8.0.min.js"><\/script>')</script>
         <script src="../js/plugins.js"></script>
         <script src="../js/main.js"></script>
-
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g,s)}(document,'script'));
-        </script>
     </body>
 </html>

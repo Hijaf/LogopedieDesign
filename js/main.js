@@ -60,7 +60,7 @@
 		gmap = new google.maps.Map(document.getElementById("gmap"),{
 			zoom: 15,
 			mapTypeId: google.maps.MapTypeId.HYBRID,
-			center: new google.maps.LatLng( 50.5875838, 5.5702195),
+			center: new google.maps.LatLng( 50.5875838, 5.5702195 ),
 			mapTypeControlOptions: {
 		      mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
 		    }

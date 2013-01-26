@@ -1,642 +1,99 @@
-html {
-  font-size: 16px;
-  font-family: Helvetica, Arial, sans-serif;
-  color: #606060;
-}
-a {
-  text-decoration: underline;
-  color: #606060;
-}
-a:hover,
-.active {
-  color: #BC7116;
-}
-li {
-  list-style-type: none;
-}
-ul {
-  margin: 0;
-  padding: 0;
-}
-.content {
-  width: 960px;
-  margin: 0 auto;
-}
-#connexion {
-  background: url(../img/fondFooter.jpg );
-  box-shadow: 0 1px 2px #AAA;
-}
-#connexion .content {
-  overflow: hidden;
-  font-size: 0.85em;
-  padding: 0.6em 0;
-}
-#connexion form {
-  float: right;
-}
-#connexion form div {
-  width: 260px;
-  float: left;
-  margin-right: 1.5em;
-}
-#connexion form div:first-child {
-  width: 225px;
-}
-#connexion form label {
-  color: #794402;
-}
-#connexion form input {
-  width: 150px;
-  padding: 0.3em 0;
-  background: #EAEAEA;
-  border: 1px solid #CCC;
-  box-shadow: 0 1px 1px #BF6F15,
-				0 1px 1px #D3D3D3 inset;
-}
-#connexion form input:focus {
-  background: white;
-  border: 1px solid #794402;
-  box-shadow: 0 1px 1px #D3D3D3 inset;
-}
-#connexion form div:last-child input,
-#connexion form div:last-child {
-  width: 80px;
-  margin-right: 0;
-}
-#connexion form div:last-child input {
-  border: none;
-  padding: 0.4em 0 0.4em 5px;
-  color: #794402;
-}
-#connexion form div:last-child input:hover {
-  background: #BF7113;
-  color: white;
-  box-shadow: 0 1px 1px #794402 inset;
-}
-header {
-  overflow: hidden;
-}
-header h1 {
-  float: left;
-  width: 220px;
-}
-header.noSlider {
-  border-bottom: 1px solid #CCC;
-}
-header.noSlider h1 {
-  margin-bottom: 0;
-}
-nav {
-  float: left;
-  margin-left: 10px;
-}
-nav ul {
-  font-family: 'Quicksand', sans-serif;
-  padding: 0;
-  margin-top: 4.5em;
-}
-nav li {
-  display: inline-block;
-}
-nav li + li {
-  margin-left: 20px;
-}
-nav li a {
-  display: block;
-  color: #383838;
-  padding: 0.4em 0.6em;
-  text-decoration: none;
-}
-nav li a:hover,
-.active {
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
-  -o-border-radius: 4px;
-  border-radius: 4px;
-  background-color: #FFCB91;
-  -moz-transition-property: background-color;
-  -moz-transition-duration: 0.2s;
-  -webkit-transition-property: background-color;
-  -webkit-transition-duration: 0.2s;
-  -o-transition-property: background-color;
-  -o-transition-duration: 0.2s;
-  transition-property: background-color;
-  transition-duration: 0.2s;
-}
-#slider {
-  position: relative;
-  margin-top: -4.75em;
-  z-index: -1;
-}
-#slider div {
-  width: 344px;
-}
-.eventSlider {
-  position: absolute;
-  right: 2.5em;
-  top: 2.5em;
-  padding: 1em;
-  background: rgba(0, 0, 0, 0.8);
-  color: white;
-  text-align: right;
-}
-.eventSlider h2 {
-  margin: 0;
-}
-#evenements,
-#evenementsComplete {
-  overflow: hidden;
-  padding: 1em 0;
-}
-#agenda,
-#agendaComplete {
-  float: left;
-  width: 460px;
-}
-#agenda ul,
-#agendaComplete ul {
-  padding: 0;
-  width: 460px;
-}
-#publications,
-#publicationsComplete {
-  width: 460px;
-  margin-left: 20px;
-  float: right;
-}
-#publications h3,
-#publicationsComplete h3 {
-  margin-bottom: 0;
-}
-#publications p,
-#publicationsComplete p {
-  margin-top: 0.4em;
-}
-#publications ul,
-#publicationsComplete ul {
-  padding-left: 0;
-}
-.event {
-  position: relative;
-}
-.event div {
-  right: 0em;
-  top: 0;
-  left: 2.6em;
-  position: relative;
-  z-index: 0;
-  border-left: 1px solid black;
-  padding: 0.5em 0 0.5em 4em;
-}
-.event p {
-  margin: 0.4em 0 0.3em 0;
-}
-.event strong {
-  padding-top: 0em;
-  font-weight: bold;
-  display: block;
-}
-.event span {
-  background: url(../img/calendar.png) no-repeat;
-  display: inline-block;
-  text-align: center;
-  width: 83px;
-  height: 83px;
-  padding-top: 0.4em;
-  position: absolute;
-  top: 10px;
-  left: 0;
-  z-index: 10;
-}
-.event img {
-  float: left;
-}
-.event h3 {
-  margin: 0;
-}
-#presentation,
-#presentationPortraits,
-#presentationEnseignement,
-#presentationAgenda,
-#presentationContact,
-#presentationRecherche {
-  background: #F1F1F1;
-  border-top: #AAA solid 1px;
-  overflow: hidden;
-  line-height: 1.6em;
-  margin-top: 1.5em;
-}
-#presentation h2 {
-  padding-top: 1em;
-  margin-bottom: 0;
-}
-#presentation .content,
-#presentationPortraits .content,
-#presentationEnseignement .content,
-#presentationAgenda .content,
-#presentationContact .content,
-#presentationRecherche .content {
-  overflow: hidden;
-}
-#presentation .content div {
-  float: left;
-}
-#presentation p {
-  float: left;
-}
-#presentation p,
-#presentation li {
-  width: 460px;
-}
-#presentation ol {
-  width: 460px;
-  padding-left: 0;
-}
-#presentation div + p {
-  float: right;
-  margin-left: 40px;
-  margin-top: 5.35em;
-}
-/************************************
-******** Footer
-************************************/
-footer {
-  background: url(../img/fondFooter.jpg );
-  margin: 0;
-  padding: 12px 0;
-  text-align: right;
-}
-footer p {
-  opacity: 0.5;
-  font-size: 0.8em;
-}
-/************************************
-******** Page portraits
-************************************/
-#uniteTexte {
-  overflow: hidden;
-  padding-bottom: 1em;
-}
-#uniteTexte div {
-  width: 460px;
-  float: left;
-}
-#uniteTexte div + div {
-  margin-left: 40px;
-}
-#presentationPortraits h2 {
-  padding-top: 2em;
-  margin-bottom: 0;
-  color: #D37A15;
-}
-#presentationPortraits h3 {
-  margin-top: 2em;
-  border-bottom: 1px solid #C6C6C6;
-  color: #D37A15;
-}
-#presentationPortraits img {
-  padding: 0.4em;
-  margin-right: 1em;
-  background: rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-  float: left;
-}
-#presentationPortraits p {
-  margin-top: 0;
-}
-#presentationPortraits section:last-child h3 + div + h4 + h3 {
-  margin-top: 6em;
-}
-/************************************
-******** Page enseignements
-************************************/
-.enseignement,
-#presentationEnseignement {
-  padding-bottom: 1em;
-}
-#presentationEnseignement h2,
-#presentationEnseignement h3 {
-  color: #D37A15;
-}
-#presentationEnseignement h2 {
-  padding-top: 2em;
-}
-#presentationEnseignement section + section {
-  margin-top: 2em;
-}
-#presentationEnseignement a {
-  padding: 0.5em 0;
-  display: block;
-  width: 200px;
-}
-#presentationEnseignement table {
-  margin-top: 2em;
-  text-align: center;
-}
-#presentationEnseignement thead {
-  font-weight: bold;
-  border-top: 1px solid #CCC;
-  border-bottom: 1px solid #CCC;
-}
-#presentationEnseignement thead td {
-  border-right: 1px solid #CCC;
-  width: 320px;
-  padding: 0.3em 0;
-}
-#presentationEnseignement tbody td {
-  padding: 1em 0;
-  border-right: 1px solid #CCC;
-}
-#presentationEnseignement thead td:last-child,
-#presentationEnseignement tbody td:last-child {
-  border: none;
-}
-.enseignement h4 {
-  margin-bottom: 0;
-}
-.enseignement ul {
-  margin-top: 5px;
-}
-/************************************
-******** Page agenda
-************************************/
-#presentationAgenda {
-  line-height: 1.45em;
-}
-#presentationAgenda h2 {
-  color: #606060;
-}
-/************************************
-******** Page contact
-************************************/
-.contact {
-  margin-bottom: 3.5em;
-}
-.contact h3,
-#presentationContact h3 {
-  border-bottom: 1px solid #CCC;
-}
-.contact section {
-  overflow: hidden;
-}
-#voitureAcces {
-  width: 460px;
-  float: left;
-}
-#gmap {
-  height: 315px;
-  border: 10px solid #DBDBDB;
-  border-radius: 5px;
-}
-#gmap.contact {
-  width: 460px;
-  left: 20px;
-}
-#presentationContact ul + ul {
-  margin-top: 1em;
-}
-#presentationContact ul + ul li {
-  border-top: 1px solid #CCC;
-  padding: 1em 0;
-}
-#presentationContact ul + ul li p {
-  margin: 0.3em 0;
-}
-#presentationContact .content {
-  padding-bottom: 2em;
-}
-#presentationContact section {
-  width: 220px;
-  float: left;
-}
-#presentationContact section + section {
-  margin-left: 20px;
-}
-#presentationContact h3:first-child {
-  padding-top: 2em;
-}
-/************************************
-******** Page recherche
-************************************/
-#presentationRecherche p {
-  display: inline-block;
-  padding: 0 0.85em;
-}
-#presentationRecherche p + p {
-  border-left: 1px solid #AAA;
-  border-right: 1px solid #AAA;
-}
-/* ==============
-  Media Querie (min-width: 768px) and (max-width: 959px)
-  ============== */
-@media only screen and (min-width: 768px) and (max-width: 959px) {
-  .content {
-    width: 660px;
-  }
-  header h1 {
-    width: 160px;
-  }
-  header h1 img {
-    width: 160px;
-    height: 116px;
-  }
-  nav {
-    width: 500px;
-    margin: 0;
-  }
-  nav ul {
-    margin-top: 3.6em;
-  }
-  nav li {
-    font-size: 0.85em;
-  }
-  nav li + li {
-    margin-left: 0px;
-  }
-  #slider {
-    margin-top: -4.05em;
-  }
-  #slider img {
-    width: 660px;
-  }
-  .eventSlider {
-    position: absolute;
-    right: 1em;
-    top: 0.8em;
-    padding: 1em;
-    background: rgba(0, 0, 0, 0.8);
-    color: white;
-    text-align: right;
-  }
-  .eventSlider h2 {
-    margin: 0;
-    font-size: 1.1em;
-  }
-  .eventSlider p {
-    margin-top: 0.5em;
-  }
-  #evenements,
-  #evenementsComplete {
-    overflow: hidden;
-    padding: 1em 0;
-  }
-  #evenements h2 {
-    text-align: center;
-  }
-  #evenements ul {
-    margin: 0 auto;
-  }
-  #agenda,
-  #agendaComplete {
-    float: none;
-    margin: 0 auto;
-  }
-  #publications,
-  #publicationsComplete {
-    float: none;
-    margin: 0 auto;
-    margin-top: 2em;
-  }
-  #presentation {
-    padding-bottom: 2em;
-  }
-  #presentation .content div {
-    float: none;
-  }
-  #presentation p {
-    float: none;
-  }
-  #presentation p,
-  #presentation li {
-    width: 660px;
-  }
-  #presentation ol {
-    width: 660px;
-  }
-  #presentation div + p {
-    margin-top: 0.5em;
-  }
-  /************************************
-  	******** Page portraits
-  	************************************/
-  #uniteTexte {
-    overflow: hidden;
-    padding-bottom: 1em;
-  }
-  #uniteTexte div {
-    width: 660px;
-    float: none;
-  }
-  #uniteTexte div + div {
-    margin-left: 0px;
-  }
-  /************************************
-  	******** Page enseignements
-  	************************************/
-  #presentationEnseignement h2 {
-    padding-top: 1em;
-  }
-  /************************************
-  	******** Page contact
-  	************************************/
-  #voitureAcces {
-    width: 660px;
-  }
-  #gmap.contact {
-    left: 0;
-    top: 2em;
-    width: 640px;
-  }
-  #presentationContact ul + ul li {
-    border-top: 1px solid #CCC;
-  }
-  #presentationContact section {
-    float: none;
-    width: 660px;
-  }
-  #presentationContact section + section {
-    margin-left: 0px;
-  }
-}
-/* ==============
-  Media Querie ((min-width: 480px) and (max-width: 767px)
-   ============== */
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-  .content {
-    width: 440px;
-  }
-  #connexion form,
-  #slider {
-    display: none;
-  }
-  header.noSlider {
-    border: none;
-  }
-  header h1 {
-    float: none;
-    display: block;
-    margin: 0.67em auto;
-    padding-left: 1.5em;
-    margin-bottom: 0em;
-  }
-  nav {
-    float: none;
-    width: 440px;
-    border-top: 1px solid #CCC;
-    border-bottom: 1px solid #CCC;
-    overflow: hidden;
-    padding: 0;
-  }
-  nav ul {
-    overflow: hidden;
-    margin-top: 0;
-    padding: 0.5em 0;
-  }
-  nav li {
-    display: block;
-    float: left;
-  }
-  nav li + li {
-    margin-left: 0px;
-  }
-  nav li + li + li + li {
-    margin-left: 6.3em;
-  }
-  nav li + li + li + li + li {
-    margin: 0;
-  }
-  nav li a {
-    font-size: 1.1em;
-  }
-  #evenements,
-  #evenementsComplete,
-  #agenda,
-  #agendaComplete,
-  #publications,
-  #publicationsComplete {
-    width: 440px;
-  }
-  #publications,
-  #publicationsComplete {
-    margin-top: 2em;
-  }
-  #presentation div p,
-  #presentation div li {
-    width: 440px;
-  }
-  #presentation div + p {
-    width: 440px;
-    float: none;
-    margin: 0;
-    margin-bottom: 2em;
-  }
-  h2 {
-    border: none;
-  }
-}
-/* ==============
-  Media Querie ((min-width: 0px) and (max-width: 479px)
-   ============== */
-@media only screen and (min-width: 0px) and (max-width: 479px) {
-  
-}
+html{font-size:16px;font-family:Helvetica,Arial,sans-serif;color:#606060;}
+h2{margin:0 0 0.83em 0;}
+a{text-decoration:underline;color:#606060;font-family:'Quicksand',sans-serif;}
+a:hover,.active{color:#BC7116;}
+li{list-style-type:none;}
+ul{margin:0;padding:0;}
+.content{width:960px;margin:0 auto;}
+#connexion{background:url(../img/fondFooter.jpg );box-shadow:0 1px 2px #AAA;}
+#connexion .content{overflow:hidden;font-size:0.85em;padding:0.6em 0;}
+#connexion form{float:right;}
+#connexion form div{width:280px;float:left;margin-right:1.5em;}
+#connexion form div:first-child{width:250px;}
+#connexion form label{color:#794402;}
+#connexion form input{width:150px;padding:0.3em 0;background:#EAEAEA;border:1px solid #CCC;box-shadow:0 1px 1px #BF6F15,	0 1px 1px #D3D3D3 inset;}
+#connexion form input:focus{background:white;border:1px solid #794402;box-shadow:0 1px 1px #D3D3D3 inset;}
+#connexion form div:last-child input,#connexion form div:last-child{width:80px;margin-right:0;}
+#connexion form div:last-child input{border:none;padding:0.4em 0 0.4em 5px;color:#794402;}
+#connexion form div:last-child input:hover{background:#BF7113;color:white;box-shadow:0 1px 1px #794402 inset;}
+header{overflow:hidden;}
+header h1{float:left;width:220px;}
+header.noSlider{border-bottom:1px solid #CCC;}
+header.noSlider h1{margin-bottom:0;}
+nav{float:left;margin-left:10px;}
+nav ul{font-family:'Quicksand',sans-serif;padding:0;margin-top:4.5em;}
+nav li{display:inline-block;}
+nav li+li{margin-left:20px;}
+nav li a{display:block;color:#383838;padding:0.4em 0.6em;text-decoration:none;}
+nav li a:hover,.active{-moz-border-radius:4px;-webkit-border-radius:4px;-o-border-radius:4px;border-radius:4px;background-color:#FFCB91;-moz-transition-property:background-color;-moz-transition-duration:0.2s;-webkit-transition-property:background-color;-webkit-transition-duration:0.2s;-o-transition-property:background-color;-o-transition-duration:0.2s;transition-property:background-color;transition-duration:0.2s;}
+#slider{position:relative;margin-top:-4.75em;z-index:-1;}
+#slider section{width:344px;}
+.eventSlider{position:absolute;right:2.5em;top:2em;padding:1em;background:rgba(0, 0, 0, 0.8);color:white;text-align:right;}
+.eventSlider h2{margin:0;}
+#evenements,#evenementsComplete{overflow:hidden;padding:2em 0;}
+#agenda,#agendaComplete{float:left;width:460px;}
+#agenda ul,#agendaComplete ul{padding:0;width:460px;}
+#publications,#publicationsComplete{width:460px;margin-left:20px;float:right;}
+#publications h3,#publicationsComplete h3{margin-bottom:0;}
+#publications p,#publicationsComplete p{margin-top:0.4em;}
+#publications ul,#publicationsComplete ul{padding-left:0;}
+.event{position:relative;}
+.event div{right:0em;top:0;left:2.6em;position:relative;z-index:0;border-left:1px solid black;padding:0.5em 0 0.5em 4em;}
+.event p{margin:0.4em 0 0.3em 0;}
+.event strong{padding-top:0em;font-weight:bold;display:block;}
+.event span{background:url(../img/calendar.png) no-repeat;display:inline-block;text-align:center;width:83px;height:83px;padding-top:0.4em;position:absolute;top:10px;left:0;z-index:10;}
+.event img{float:left;}
+.event h3{margin:0;}
+#presentation,#presentationPortraits,#presentationEnseignement,#presentationAgenda,#presentationContact,#presentationRecherche{background:#F1F1F1;border-top:#AAA solid 1px;overflow:hidden;line-height:1.6em;padding-top:2em;padding-bottom:1.5em;}
+#presentation h2{margin-bottom:0;}
+#presentation .content,#presentationPortraits .content,#presentationEnseignement .content,#presentationAgenda .content,#presentationContact .content,#presentationRecherche .content{overflow:hidden;}
+#presentation .content section{float:left;}
+#presentation p{float:left;}
+#presentation p,#presentation li{width:460px;}
+#presentation ol{width:460px;padding:0;}
+#presentation section+p{float:right;margin-left:40px;margin-top:2.7em;}
+footer{background:url(../img/fondFooter.jpg );margin:0;padding:12px 0;text-align:right;}
+footer p{opacity:0.5;font-size:0.8em;}
+#uniteTexte{overflow:hidden;padding-top:2em;padding-bottom:2em;}
+#uniteTexte div{width:460px;float:left;}
+#uniteTexte div+div{margin-left:40px;}
+#presentationPortraits h2{margin-bottom:0;color:#D37A15;}
+#presentationPortraits h3{margin-top:2em;border-bottom:1px solid #C6C6C6;color:#D37A15;}
+#presentationPortraits img{padding:0.4em;margin-right:1em;background:rgba(0, 0, 0, 0.2);border-radius:4px;float:left;}
+#presentationPortraits p{margin-top:0;}
+#presentationPortraits section:last-child h3+div+h4+h3{margin-top:6em;}
+.enseignement,#presentationEnseignement{padding-bottom:1.5em;padding-top:1.5em;}
+#presentationEnseignement h2,#presentationEnseignement h3{color:#D37A15;}
+#presentationEnseignement section+section{margin-top:2em;}
+#presentationEnseignement a{padding:0.5em 0;display:block;width:220px;}
+#presentationEnseignement table{margin-top:2em;text-align:center;}
+#presentationEnseignement thead{font-weight:bold;border-top:1px solid #CCC;border-bottom:1px solid #CCC;}
+#presentationEnseignement thead td{border-right:1px solid #CCC;width:320px;padding:0.3em 0;}
+#presentationEnseignement tbody td{padding:1em 0;border-right:1px solid #CCC;}
+#presentationEnseignement thead td:last-child,#presentationEnseignement tbody td:last-child{border:none;}
+.enseignement h4{margin-bottom:0;}
+.enseignement ul{margin-top:5px;}
+#presentationAgenda{line-height:1.45em;}
+#presentationAgenda h2{color:#606060;}
+#evenementsComplete{padding:1em 0;}
+#evenements.agenda{padding-top:0;}
+.contact{padding-top:2em;padding-bottom:2em;}
+.contact h3,#presentationContact h3{border-bottom:1px solid #CCC;}
+.contact section{overflow:hidden;}
+#voitureAcces{width:460px;float:left;}
+#voitureAcces h4{margin-top:1em;margin-bottom:0.3em;}
+#gmap{height:315px;border:10px solid #DBDBDB;border-radius:5px;}
+#gmap.contact{width:460px;left:20px;}
+#presentationContact ul+ul{margin-top:1em;}
+#presentationContact ul+ul li{border-top:1px solid #CCC;padding:1em 0;}
+#presentationContact ul+ul li p{margin:0.3em 0;}
+#presentationContact section{width:220px;float:left;}
+#presentationContact section+section{margin-left:20px;}
+div.content .icon-search,div.content>h2.icon-calendar{margin-top:1.1em;}
+#gmap{margin-bottom:2em;}
+#world section{width:440px;float:left;padding:0 20px;}
+#world section h4{font-size:1.2em;border-bottom:1px solid #CCC;}
+.person img{float:left;padding:0.4em;background:rgba(0, 0, 0, 0.2);margin-right:1em;}
+.person p{margin:0;padding:0;}
+.person h5{font-size:1.05em;margin:0 0 0.5em 0;}
+@media only screen and (min-width:768px) and (max-width:959px){.content{width:660px;} header h1{width:160px;} header h1 img{width:160px;height:116px;} nav{width:500px;margin:0;} nav ul{margin-top:3.6em;} nav li{font-size:0.85em;} nav li+li{margin-left:0px;} #slider{margin-top:-4.05em;} #slider img{width:660px;} .eventSlider{position:absolute;right:1em;top:0.8em;padding:1em;background:rgba(0, 0, 0, 0.8);color:white;text-align:right;} .eventSlider h2{margin:0;font-size:1.1em;} .eventSlider p{margin-top:0.5em;} #evenements,#evenementsComplete{overflow:hidden;padding:1em 0;} #evenements h2{text-align:center;} #evenements ul{margin:0 auto;} #agenda,#agendaComplete{float:none;margin:0 auto;} #publications,#publicationsComplete{float:none;margin:0 auto;margin-top:2em;} #presentation{padding-bottom:2em;} #presentation .content section{float:none;} #presentation p{float:none;} #presentation p,#presentation li{width:660px;} #presentation ol{width:660px;} #presentation section+p{margin-top:0.5em;} #uniteTexte{overflow:hidden;padding-bottom:1em;} #uniteTexte div{width:660px;float:none;} #uniteTexte div+div{margin-left:0px;} #presentationEnseignement h2{padding-top:1em;} #voitureAcces{width:660px;} #gmap.contact{left:0;top:2em;width:640px;} #presentationContact ul+ul li{border-top:1px solid #CCC;} #presentationContact section{float:none;width:660px;} #presentationContact section+section{margin-left:0px;}}@media only screen and (min-width:480px) and (max-width:767px){.content{width:440px;} #connexion form,#slider{display:none;} header.noSlider{border:none;} header h1{float:none;display:block;margin:0.67em auto;padding-left:1.5em;margin-bottom:0em;} nav{float:none;width:440px;border-top:1px solid #CCC;border-bottom:1px solid #CCC;overflow:hidden;padding:0;} nav ul{overflow:hidden;margin-top:0;padding:0.5em 0;} nav li{display:block;float:left;} nav li+li{margin-left:0px;} nav li+li+li+li{margin-left:6.3em;} nav li+li+li+li+li{margin:0;} nav li a{font-size:1.1em;} #evenements,#evenementsComplete,#agenda,#agendaComplete,#publications,#publicationsComplete{width:440px;} #publications,#publicationsComplete{margin-top:2em;} #presentation div p,#presentation div li{width:440px;} #presentation section+p{width:440px;float:none;margin:0;margin-bottom:2em;} h2{border:none;} #uniteTexte div+div{margin-left:0px;} #gmap.contact{width:420px;left:0;top:2em;} #presentationContact section{float:none;width:440px;} #presentationContact section+section{margin-left:0;} #presentationContact h3:first-child{padding-top:0em;} #presentationContact ul+ul li{padding:0.2em 0;} #evenements{overflow:hidden;padding:0em 0;}}@media only screen and (min-width:0px) and (max-width:479px){.content{width:300px;} #connexion form,#slider{display:none;} header.noSlider{border:none;} header h1{float:none;display:block;margin:0.67em auto;padding-left:1.5em;margin-bottom:0em;} nav{float:none;width:300px;border-top:1px solid #CCC;border-bottom:1px solid #CCC;overflow:hidden;padding:0;} nav ul{overflow:hidden;margin-top:0;padding:0.5em 0;width:300px;} nav li{display:block;float:none;width:290px;} nav li+li{margin-left:0px;} nav li a{font-size:1em;} #evenements,#evenementsComplete,#agenda,#agendaComplete,#publications,#publicationsComplete{width:300px;} #publications,#publicationsComplete{margin-top:2em;} #presentation div p,#presentation div li{width:300px;} #presentation section+p{width:300px;float:none;margin:0;margin-bottom:2em;} h2{border:none;text-align:center;width:300px;} .event{position:relative;} .event div{right:0em;top:0;left:2.6em;position:relative;z-index:0;border-left:1px solid black;padding:0.5em 0 0.5em 4em;} .event p{font-size:0.8em;margin:0.4em 0 0.3em 0;width:190px;} .event strong{padding-top:0em;font-weight:bold;display:block;} .event img{float:left;} .event h3{margin:0;font-size:0.9em;width:190px;} #uniteTexte div+div{margin-left:0px;} #uniteTexte div{width:300px;float:none;} #gmap.contact{width:300px;left:0;top:2em;} #presentationContact section{float:none;width:300px;} #presentationContact section+section{margin-left:0;} #presentationContact h3:first-child{padding-top:0em;} #presentationContact ul+ul li{padding:0.2em 0;} #evenements{overflow:hidden;padding:0em 0;}}
